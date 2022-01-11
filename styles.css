@@ -93,7 +93,7 @@ body {
 .first-paragraph {
     font-size: 1.50em;
     padding: 0px 10px;
-    word-spacing: 0.03em;
+    word-spacing: 0.13em;
 }
 
 .second-paragraph {
@@ -101,8 +101,8 @@ body {
     font-size: 1em;
     font-weight: 500;
     opacity: 70%;
-    padding: 15px 8px;
-    word-spacing: 0.1em;
+    padding: 15px 8px;    
+    margin-top: 0.75em;    
 }
 
 .bg-dark-gray {
@@ -133,7 +133,7 @@ body {
     border: 2px solid var(--moderate-violet);
 }
 
-.fw-500 {
+.fw-600 {
     font-weight: 600;
 }
 
@@ -151,10 +151,10 @@ body {
     .wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto;
-        column-gap: 3em;
-        row-gap: 2.5em;
-        min-width: 100em;
+        grid-template-rows: repeat(2, 263px);
+        column-gap: 2.5em;
+        row-gap: 2em;
+        min-width: 88em;
         margin: 12.5em auto;
     }
 
@@ -182,5 +182,14 @@ body {
     
     .card-5 {
         grid-area: 1 / 4 / -1 / -1;
+    }
+    
+    .card-5 > p.second-paragraph {
+        padding-right: 16px;
+    }
+
+    .second-paragraph {
+        line-height: 1.3em;
+        margin-top: 0.35em;      
     }
 }
