@@ -41,6 +41,10 @@ body {
     margin: 40px 25px;  
 }
 
+.hidden {
+    display: none;
+}
+
 .card {
     position: relative;
     font-family: inherit;
